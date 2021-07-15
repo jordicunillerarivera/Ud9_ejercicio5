@@ -31,7 +31,7 @@ public class Aula {
 			if(profesor.getMateria().toLowerCase().equals(this.materia.toLowerCase())) {
 				
 				aux = true;
-				
+
 			}
 		}
 		
@@ -40,7 +40,7 @@ public class Aula {
 			if(estudiantes[a].asistencia()) {
 				
 				cont++;
-				
+        
 			}
 		}
 		
