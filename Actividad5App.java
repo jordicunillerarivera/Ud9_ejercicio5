@@ -11,7 +11,7 @@ public class Actividad5App {
 
 		if (hayClase(aula, prof, estudiantes)) {
 			System.out.println("Hay clase");
-      comprobarNota(estudiantes);
+      			comprobarNota(estudiantes);
 		} else {
 			System.out.println("No hay clase");
 		}
