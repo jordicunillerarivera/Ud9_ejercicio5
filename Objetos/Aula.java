@@ -24,14 +24,14 @@ public class Aula {
 	public boolean estaDisponible(Profesor profesor, Estudiante[] estudiantes) {
 		
 		int cont = 0;
-		
 		boolean aux = false;
 		
 		if(profesor.asistencia()) {
+			
 			if(profesor.getMateria().toLowerCase().equals(this.materia.toLowerCase())) {
-			
+				
 				aux = true;
-			
+
 			}
 		}
 		
@@ -40,6 +40,7 @@ public class Aula {
 			if(estudiantes[a].asistencia()) {
 				
 				cont++;
+        
 			}
 		}
 		

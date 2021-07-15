@@ -8,7 +8,6 @@ public class Profesor extends Persona implements Asisteable{
 	
 	public Profesor(String materia) {
 		
-//		
 		this.materia = materia;
 		
 	}
