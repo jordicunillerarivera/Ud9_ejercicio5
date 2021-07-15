@@ -29,7 +29,7 @@ public class Aula {
 		
 		if(profesor.asistencia()) {
 			
-			if(profesor.getMateria().toLowerCase() == this.materia.toLowerCase()) {
+			if(profesor.getMateria().toLowerCase().equals(this.materia.toLowerCase())) {
 				
 				aux = true;
 				
