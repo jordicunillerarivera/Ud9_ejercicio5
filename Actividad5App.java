@@ -18,6 +18,7 @@ public class Actividad5App {
 
 	}
 	
+		// Metodo para crear un array de alumnos
 	public static Estudiante[] crearArray() {
 		
 		Estudiante alfonso = new Estudiante("Alfonso",18, 'H', 7, 1);
@@ -49,6 +50,7 @@ public class Actividad5App {
 		return estudiantes;
 	}
 
+		// Metodo para comprobar las notas de los alumnos, devuelve los aprobados dividido por sexos
 	public static void comprobarNota(Estudiante[]estudiantes) {
 		
 		int aprobados=0;
@@ -73,6 +75,7 @@ public class Actividad5App {
 		System.out.println("Alumnos totales aprobados: "+aprobados);
   }
 
+		// Metodo para comprovar si hay clase
 	public static boolean hayClase(Aula aula, Profesor prof, Estudiante[] estudiantes) {
 		
 		if(aula.estaDisponible(prof, estudiantes)) {

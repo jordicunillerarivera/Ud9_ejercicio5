@@ -2,19 +2,18 @@ package Objetos;
 
 public abstract class Persona {
 
+	// Atributos
+	
 	protected String nombre;
 	protected int edad;
 	protected char sexo;
-
-	public Persona(String nombre, int edad, char sexo) {
-//		para definir clase Aula como línea de objeto
-
-		this.nombre = nombre;
-		this.edad = edad;
-		this.sexo = comprobarSexo(sexo);
+	
+	// Constructores
+	
+	public Persona() {
 
 	}
-
+	
 	public Persona(String nombre, int edad) {
 
 		this.nombre = nombre;
@@ -22,10 +21,17 @@ public abstract class Persona {
 
 	}
 
-	public Persona() {
+	public Persona(String nombre, int edad, char sexo) {
+
+		this.nombre = nombre;
+		this.edad = edad;
+		this.sexo = comprobarSexo(sexo);
 
 	}
+	
+	// Metodos
 
+		// Comprobar que el sexo introducido sea correcto
 	public char comprobarSexo(char sexo) {
 
 		sexo = Character.toLowerCase(sexo);
@@ -45,6 +51,8 @@ public abstract class Persona {
 
 		}
 	}
+	
+	// Setters & Getters
 
 	public String getNombre() {
 		return nombre;
